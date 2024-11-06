@@ -12,30 +12,32 @@
 </head>
 
 <body>
-  <header>
-    <nav class="header__menu">
-      <ul class="header__links-list">
-        <li class="header__links-list-item header__links-list-item_no-bullit">
-          <a class="header__link">главная</a>
+  <header class="header">
+    <ul class="header__links-list">
+      <li class="header__links-list-item header__links-list-item_no-bullit">
+        <a class="header__link header__link_active" href="#0">главная</a>
+      </li>
+      <li class="header__links-list-item">
+        <a class="header__link" href="#0">посмотреть лоты</a>
+      </li>
+      <li class="header__links-list-item">
+        <a class="header__link" href="#0">об аукционе</a>
+      </li>
+    </ul>
+    <a class="link_logo" href="#0">
+      <img class="header__logo-image" src="images/logo-black.svg" alt="Логотип">
+    </a>
+    <address class="adress">
+      <ul class="address_nav">
+        <li>
+          <a href="tel:+99995555555">+9 999 555 5555</a>
         </li>
-        <li class="header__links-list-item">
-          <a class="header__link" href="#2">посмотреть лоты</a>
-        </li>
-        <li class="header__links-list-item">
-          <a class="header__link" href="#3">об аукционе</a>
+        <li>
+          <a href="info@sobaka.ge">info@sobaka.ge</a>
         </li>
       </ul>
-    </nav>
-    <a class="header__logo">
-      <img class="header__logo-image" src="./images/logo-black.svg" alt="Логотип проекта">
-    </a>
-    <div class="address">
-      <address class="header__address">
-        <a class="header__address" href="tel:+99995555555">+9 999 555 5555</a><br>
-        <a class="header__address" href="mailto:mail@example.com">info@sobaka.ge</a>
-        <p>наб. Принсенграхт 263-265, Амстердам</p>
-      </address>
-    </div>
+      <span class="address_nav">наб. Принсенграхт 263- <br>265, Амстердам</span>
+    </address>
   </header>
   <main>
     <section class="cover">
@@ -56,11 +58,11 @@
       <ul class="lots__card-list">
         <li class="lots__card-list-item">
           <a class="card-link" href="#4">
-            <article class="card card_type_film">
+            <div class="card card_type_film">
               <h3 class="card__title">фильм режиссёра, который бросил киношколу</h3>
               <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не
                 знали, что режиссёр — Пол Томас Андерсон?</p>
-            </article>
+            </div>
             <div class="overlay"></div>
           </a>
         </li>
@@ -93,7 +95,7 @@
     <section class="about">
       <article class="about__column">
         <div class="about__logo">
-          <img class="about__logo-image" src="./images/logo-white.svg" alt="logo">
+          <img class="about__logo-image" src="./images/logo-white.svg" alt="Логотип аукциона &quot;Оно тебе надо&quot;">
         </div>
         <h2 class="about__title">об аукционе</h2>
         <div class="about__text">
@@ -110,44 +112,40 @@
       </article>
     </section>
   </main>
-  <footer>
-    <div class="address">
-      <address class="footer__address">
-        <a href="tel:+70000000">+9 999 555 5555</a>
-        <a href="mailto:mail@example.com">info@sobaka.ge</a>
-        <p>наб. Принсенграхт 263-265, Амстердам</p>
-      </address>
-    </div>
-    <nav class="footer__menu">
-      <ul class="footer__menu-list">
-        <li class="footer__menu-list-item footer__menu-link_active">
-          <a class="footer__menu-link ">главная</a>
+  <footer class="footer">
+    <address class="address_nav">
+      <ul class="adress_footer_list">
+        <li class="adress_footer_list_item">
+          <a class="adress_footer_number" href="tel:+9-999-555-5555">+9 999 555 5555</a>
         </li>
-        <li class="footer__menu-list-item">
-          <a class="footer__menu-link" href="#">посмотреть лоты</a>
-        </li>
-        <li class="footer__menu-list-item">
-          <a class="footer__menu-link" href="#">об аукционе</a>
+        <li class="ul_footer">
+          <a class="adress_footer_mail" href="info@sobaka.ge">info@sobaka.ge</a>
         </li>
       </ul>
+      <span class="address_nav">наб. Принсенграхт 263- 265, Амстердам</span>
+    </address>
+    <nav class="footer__menu">
+      <ul class="footer__menu-list">
+        <li class="footer__menu-list-item">
+          <a class="footer__menu-link_active" href="#0">главная</a>
+        </li>
+        <li class="footer__menu-list-item">
+          <a href="#0">посмотреть лоты</a>
+        </li>
+        <li class="footer__menu-list-item"><a href="#0">об аукционе</a></li>
+      </ul>
     </nav>
-    <ul class="footer__social-list">
-      <li class="footer__social-link">
-        <a href="#" target="_blank">
-          <img class="footer__social-icon" src="./images/yt.svg" alt="yt">
-        </a>
-      </li>
-      <li class="footer__social-link">
-        <a href="#" target="_blank">
-          <img class="footer__social-icon" src="./images/vk.svg" alt="vk">
-        </a>
-      </li>
-      <li class="footer__social-link">
-        <a href="#" target="_blank">
-          <img class="footer__social-icon" src="./images/pinterest.svg" alt="pinterest">
-        </a>
-      </li>
-    </ul>
+    <div class="footer__social-list">
+      <a class="footer__social-link" href="#0">
+        <img class="footer__social-icon" src="images/yt.svg" alt="Youtube">
+      </a>
+      <a class="footer__social-link" href="#0">
+        <img class="footer__social-icon" src="images/vk.svg" alt="Vkontakte">
+      </a>
+      <a class="footer__social-link" href="#0">
+        <img class="footer__social-icon" src="images/pinterest.svg" alt="Pinterest">
+      </a>
+    </div>
   </footer>
 </body>
 
