@@ -68,13 +68,13 @@
         </li>
         <li class="lots__card-list-item">
           <a class="card-link" href="#4">
-            <article class="card card_type_book">
+            <div class="card card_type_book">
               <h3 class="card__title">книга, где описан один скучный день из жизни рекламного агента</h3>
               <p class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на
                 древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная
                 с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на
                 «Улисса» Джеймса Джойса?</p>
-            </article>
+            </div>
             <div class="overlay"></div>
           </a>
         </li>
@@ -113,39 +113,47 @@
     </section>
   </main>
   <footer class="footer">
-    <address class="address_nav">
-      <ul class="adress_footer_list">
-        <li class="adress_footer_list_item">
-          <a class="adress_footer_number" href="tel:+9-999-555-5555">+9 999 555 5555</a>
+    <address class="adress adress-left">
+      <ul class="address_nav">
+        <li>
+          <a href="tel:+99995555555">+9 999 555 5555</a>
         </li>
-        <li class="ul_footer">
-          <a class="adress_footer_mail" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <li>
+          <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         </li>
       </ul>
-      <span class="address_nav">наб. Принсенграхт 263- 265, Амстердам</span>
+      <span class="address_nav">наб. Принсенграхт 263- <br>265, Амстердам</span>
     </address>
     <nav class="footer__menu">
       <ul class="footer__menu-list">
         <li class="footer__menu-list-item">
-          <a class="footer__menu-link_active" href="#0">главная</a>
+          <a class="no-underline" class="" href="#0">главная</a>
         </li>
         <li class="footer__menu-list-item">
-          <a href="#0">посмотреть лоты</a>
+          <a class="footer__menu-link_inactive" href="#0">посмотреть лоты</a>
         </li>
-        <li class="footer__menu-list-item"><a href="#0">об аукционе</a></li>
+        <li class="footer__menu-list-item">
+          <a class="footer__menu-link_inactive" href="#0">об аукционе</a>
+        </li>
       </ul>
     </nav>
-    <div class="footer__social-list">
-      <a class="footer__social-link" href="#0">
-        <img class="footer__social-icon" src="images/yt.svg" alt="Youtube">
-      </a>
-      <a class="footer__social-link" href="#0">
-        <img class="footer__social-icon" src="images/vk.svg" alt="Vkontakte">
-      </a>
-      <a class="footer__social-link" href="#0">
-        <img class="footer__social-icon" src="images/pinterest.svg" alt="Pinterest">
-      </a>
-    </div>
+    <ul class="footer__social-list">
+      <li class="footer__social-link">
+        <a href="#0">
+          <img class="footer__social-icon" src="images/yt.svg" alt="Youtube">
+        </a>
+      </li>
+      <li class="footer__social-link">
+        <a class="footer__social-link" href="#0">
+          <img class="footer__social-icon" src="images/vk.svg" alt="Vkontakte">
+        </a>
+      </li>
+      <li class="footer__social-link">
+        <a class="footer__social-link" href="#0">
+          <img class="footer__social-icon" src="images/pinterest.svg" alt="Pinterest">
+        </a>
+      </li>
+    </ul>
   </footer>
 </body>
 
